@@ -12,28 +12,28 @@ import SupportIcon from "./icons/IconSupport.vue";
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Documentation</template>
+    <template #heading>Documentação</template>
 
     Vue’s
     <a href="https://vuejs.org/" target="_blank" rel="noopener"
       >official documentation</a
     >
-    provides you with all information you need to get started.
+    fornece todas as informações de que você precisa para começar.
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <ToolingIcon />
     </template>
-    <template #heading>Tooling</template>
+    <template #heading>Ferramentas</template>
 
-    This project is served and bundled with
+    Este projeto é servido e empacotado com
     <a
       href="https://vitejs.dev/guide/features.html"
       target="_blank"
       rel="noopener"
       >Vite</a
-    >. The recommended IDE setup is
+    >. A configuração de IDE recomendada é
     <a href="https://code.visualstudio.com/" target="_blank" rel="noopener"
       >VSCode</a
     >
@@ -43,7 +43,7 @@ import SupportIcon from "./icons/IconSupport.vue";
       target="_blank"
       rel="noopener"
       >Volar</a
-    >. If you need to test your components and web pages, check out
+    >. Se você precisar testar seus componentes e páginas da web, confira
     <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a>
     and
     <a href="https://on.cypress.io/component" target="_blank"
@@ -52,68 +52,68 @@ import SupportIcon from "./icons/IconSupport.vue";
 
     <br />
 
-    More instructions are available in <code>README.md</code>.
+    Mais instruções estão disponíveis em <code>README.md</code>.
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <EcosystemIcon />
     </template>
-    <template #heading>Ecosystem</template>
+    <template #heading>Ecossistema</template>
 
-    Get official tools and libraries for your project:
+    Obtenha ferramentas e bibliotecas oficiais para o seu projeto:
     <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
     <a href="https://router.vuejs.org/" target="_blank" rel="noopener"
       >Vue Router</a
     >,
     <a href="https://test-utils.vuejs.org/" target="_blank" rel="noopener"
       >Vue Test Utils</a
-    >, and
+    >, e
     <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener"
       >Vue Dev Tools</a
-    >. If you need more resources, we suggest paying
+    >. Se você precisar de mais recursos, sugerimos pagar
     <a
       href="https://github.com/vuejs/awesome-vue"
       target="_blank"
       rel="noopener"
       >Awesome Vue</a
     >
-    a visit.
+    uma visita.
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <CommunityIcon />
     </template>
-    <template #heading>Community</template>
+    <template #heading>Comunidade</template>
 
-    Got stuck? Ask your question on
+    Fiquei preso? Faça sua pergunta em
     <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a
-    >, our official Discord server, or
+    >, nosso servidor oficial do Discord, ou
     <a
       href="https://stackoverflow.com/questions/tagged/vue.js"
       target="_blank"
       rel="noopener"
       >StackOverflow</a
-    >. You should also subscribe to
+    >. Você também deve se inscrever
     <a href="https://news.vuejs.org" target="_blank" rel="noopener"
       >our mailing list</a
     >
-    and follow the official
+    e siga o oficial
     <a href="https://twitter.com/vuejs" target="_blank" rel="noopener"
       >@vuejs</a
     >
-    twitter account for latest news in the Vue world.
+    conta no twitter para as últimas notícias do mundo Vue.
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <SupportIcon />
     </template>
-    <template #heading>Support Vue</template>
+    <template #heading>Suporte Vue</template>
 
-    As an independent project, Vue relies on community backing for its
-    sustainability. You can help us by
+    Como um projeto independente, o Vue conta com o apoio da comunidade para seus
+     sustentabilidade. Você pode nos ajudar por
     <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener"
       >becoming a sponsor</a
     >.
