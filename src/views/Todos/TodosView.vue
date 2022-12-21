@@ -12,24 +12,23 @@
 
 <script>
 //import Name from '@/components/Name.vue';
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
+import TodoService from '@/services/todos.service'
 
 export default {
     Name: 'Todos',
     setup() {
-      const todos = [
-        {identify: 1, name: 'tarefa 01', completed: true},
-        {identify: 2, name: 'tarefa 02', completed: false},
-        {identify: 3, name: 'tarefa 03', completed: true},
-      ]
-      const name = ref('default value')
+      const todos = ref([])
+      onMounted(() => {
+        TodoService.getAll()
+                .then(response => todos.value = response.data.data)
+                .catch(error => console.log(error));    
+      })
+
       return {
-        todos, 
-        name
+        todos,
       }
-      
     }
-  
 };
 
 </script>
