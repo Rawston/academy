@@ -4,14 +4,15 @@
     <ul>
       <li v-for="todo in todos" :key="todo.identify">
         {{ todo.name }}
-      </li>
-          
+      </li>          
     </ul>
+    <input type="text" v-model="name">
   </div>
 </template>
 
 <script>
 //import Name from '@/components/Name.vue';
+import { ref } from 'vue'
 
 export default {
     Name: 'Todos',
@@ -21,8 +22,10 @@ export default {
         {identify: 2, name: 'tarefa 02', completed: false},
         {identify: 3, name: 'tarefa 03', completed: true},
       ]
+      const name = ref('default value')
       return {
-        todos
+        todos, 
+        name
       }
       
     }
