@@ -1,6 +1,11 @@
 <template>
   <div class="about">
     <h1>Lista de Tarefas</h1>
+
+<div v-if="loarding">
+  Carregando tarefas
+</div>
+
     <ul>
       <li v-for="todo in todos" :key="todo.identify">
         {{ todo.name }}
@@ -19,13 +24,21 @@ export default {
     Name: 'Todos',
     setup() {
       const todos = ref([])
+
+      const loarding = ref(false)
+
       onMounted(() => {
+
+        loarding.value = true
+
         TodoService.getAll()
                 .then(response => todos.value = response.data.data)
-                .catch(error => console.log(error));    
+                .catch(error => console.log(error));
+                .finally(() => loarding.value = false)    
       })
 
       return {
+        loarding,
         todos,
       }
     }
